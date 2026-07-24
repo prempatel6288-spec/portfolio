@@ -2,7 +2,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ChevronDown } from "lucide-react";
-import esyaLogo from "@/assets/esya-logo.jpg";
+import esyaLogo from "/src/assets/esya-logo.jpg";
+import tempoLogo from "/src/assets/Tempo_logo.png";
+import cssclogo from "/src/assets/cssc-logo.png";
 
 const ExperienceSection = () => {
   const ref = useRef(null);
@@ -16,7 +18,7 @@ const ExperienceSection = () => {
       logo: (
         <img
           alt="Tempo Assist"
-          src="https://res.cloudinary.com/warmly/image/upload/q_auto,f_auto,fl_lossy,c_crop,g_custom/v1762958843/warm_opps_user_avatars_production/eti9329ch2cygofkfke2.png"
+          src={tempoLogo}
           className="w-full h-full object-cover"
         />
       ),
@@ -25,11 +27,13 @@ const ExperienceSection = () => {
           title: "Software Engineer Intern",
           dates: "June 2026 – Present",
           bullets: [
-            "Working with Java/Spring Boot to build and maintain backend services for a SaaS platform",
-            "Building RESTful APIs and integrating with third-party services to enhance platform functionality",
-            "Developing React frontends using TypeScript, Redux, and Material-UI to improve user experience",
-            "Implementing unit and integration tests to ensure code quality and reliability",
-            "Collaborating with cross-functional teams to deliver new features and improvements",
+            "Owned end-to-end delivery of 5+ Kotlin/Spring Boot REST APIs, spanning controllers, DTOs, services, DAOs and validation",
+            "Deployed zero-downtime PostgreSQL migrations for 2M+ records across 4+ services using Flyway, dual writes, backfills, & triggers",
+            "Built CDC pipelines publishing 10K+ daily events via transactional outbox and SNS/SQS, reducing redundant updates by 35%",
+            "Optimized backend data-ingestion pipelines processing 25K+ records/minute using asynchronous, non-blocking Kotlin coroutines",
+            "Built React & TypeScript interfaces using React Query, hooks, and memoization, improving rendering performance by 30%",
+            "Added 120+ unit and integration tests, lifting coverage from 72% to 90% across API, migration, validation, and persistence layers",
+            "Built horizontally scalable AWS services with autoscaling, health checks, retries, and observability, maintaining 99.9% availability",
           ],
         },
       ],
@@ -64,11 +68,7 @@ const ExperienceSection = () => {
       company: "Computer Science Student Community",
       location: "Mississauga, ON",
       logo: (
-        <img
-          alt="CSSC"
-          src="https://media.licdn.com/dms/image/v2/C4E0BAQEHyviM79Tl2g/company-logo_200_200/company-logo_200_200/0/1630656546909?e=1784160000&v=beta&t=Q_e0O3Cw0ltqin8LJWCXc2g3X84q-5yElUN4OdoHms8"
-          className="w-full h-full object-cover"
-        />
+        <img alt="CSSC" src={cssclogo} className="w-full h-full object-cover" />
       ),
       roles: [
         {
@@ -164,7 +164,9 @@ const ExperienceSection = () => {
                   <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mt-2 text-sm text-muted-foreground">
                     <span className="whitespace-nowrap">{exp.location}</span>
                     <span className="text-border">·</span>
-                    <span className="whitespace-nowrap">{exp.roles[0].dates}</span>
+                    <span className="whitespace-nowrap">
+                      {exp.roles[0].dates}
+                    </span>
                     {exp.roles.length > 1 && (
                       <span className="whitespace-nowrap px-2 py-0.5 bg-muted text-xs border border-border">
                         +{exp.roles.length - 1} role
