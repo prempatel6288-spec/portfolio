@@ -16,10 +16,10 @@ const ContactSection = () => {
   const { toast } = useToast();
 
   const copyDiscordUsername = () => {
-    navigator.clipboard.writeText("parth_45");
+    navigator.clipboard.writeText("prempatel");
     toast({
       title: "Discord username copied!",
-      description: "parth_45 has been copied to your clipboard.",
+      description: "prempatel has been copied to your clipboard.",
     });
   };
 
@@ -60,18 +60,18 @@ const ContactSection = () => {
             className="space-y-4 [&_a]:rounded-none [&_button]:rounded-none"
           >
             <a
-              href="mailto:parthtyagi1204@gmail.com"
+              href="mailto:prem.patel@mail.utoronto.ca"
               className="flex items-center gap-4 p-4 border border-border hover:bg-muted transition-colors"
             >
               <Mail className="w-5 h-5 text-foreground" />
               <div>
                 <p className="text-foreground font-medium text-sm">Email</p>
-                <p className="text-muted-foreground text-sm">parthtyagi1204@gmail.com</p>
+                <p className="text-muted-foreground text-sm">prem.patel@mail.utoronto.ca</p>
               </div>
             </a>
 
             <a
-              href="https://linkedin.com/in/parth-tyagi45"
+              href="https://linkedin.com/in/prem-patel"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-4 border border-border hover:bg-muted transition-colors"
@@ -79,12 +79,12 @@ const ContactSection = () => {
               <Linkedin className="w-5 h-5 text-foreground" />
               <div>
                 <p className="text-foreground font-medium text-sm">LinkedIn</p>
-                <p className="text-muted-foreground text-sm">parth-tyagi45</p>
+                <p className="text-muted-foreground text-sm">prem-patel</p>
               </div>
             </a>
 
             <a
-              href="https://github.com/parthtyagi9"
+              href="https://github.com/prempatel6288"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-4 border border-border hover:bg-muted transition-colors"
@@ -92,7 +92,7 @@ const ContactSection = () => {
               <Github className="w-5 h-5 text-foreground" />
               <div>
                 <p className="text-foreground font-medium text-sm">GitHub</p>
-                <p className="text-muted-foreground text-sm">parthtyagi9</p>
+                <p className="text-muted-foreground text-sm">prempatel6288</p>
               </div>
             </a>
 
@@ -103,7 +103,7 @@ const ContactSection = () => {
               <SiDiscord className="w-5 h-5 text-foreground" />
               <div>
                 <p className="text-foreground font-medium text-sm">Discord</p>
-                <p className="text-muted-foreground text-sm">parth_45</p>
+                <p className="text-muted-foreground text-sm">prempatel</p>
               </div>
             </button>
           </motion.div>
