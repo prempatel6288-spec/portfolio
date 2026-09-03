@@ -1,8 +1,8 @@
-# parthtyagi9.github.io
+# Prem Patel Portfolio
 
-My personal portfolio website showcasing my work, projects, and experience.
+My personal portfolio website showcasing my work, projects, and experience in machine learning, robotics, and data engineering.
 
-**Live at:** [parthtyagi.com](https://parthtyagi.com) | [parthtyagi9.github.io](https://parthtyagi9.github.io)
+**Live at:** [prempatel6288-spec.github.io/portfolio](https://prempatel6288-spec.github.io/portfolio)
 
 ## Tech Stack
 
