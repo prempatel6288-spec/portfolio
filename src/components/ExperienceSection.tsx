@@ -13,80 +13,25 @@ const ExperienceSection = () => {
 
   const experiences = [
     {
-      company: "Tempo Software",
+      company: "Scotiabank UofT IMI BIGDataAIHUB",
       location: "Toronto, ON",
       logo: (
         <img
-          alt="Tempo Assist"
+          alt="Scotiabank"
           src={tempoLogo}
           className="w-full h-full object-cover"
         />
       ),
       roles: [
         {
-          title: "Software Engineer Intern",
-          dates: "June 2026 – Present",
+          title: "Data Engineer & ML Modeller",
+          dates: "Nov 2025 – Mar 2026",
           bullets: [
-            "Owned end-to-end delivery of 5+ Kotlin/Spring Boot REST APIs, spanning controllers, DTOs, services, DAOs and validation",
-            "Deployed zero-downtime PostgreSQL migrations for 2M+ records across 4+ services using Flyway, dual writes, backfills, & triggers",
-            "Built CDC pipelines publishing 10K+ daily events via transactional outbox and SNS/SQS, reducing redundant updates by 35%",
-            "Optimized backend data-ingestion pipelines processing 25K+ records/minute using asynchronous, non-blocking Kotlin coroutines",
-            "Built React & TypeScript interfaces using React Query, hooks, and memoization, improving rendering performance by 30%",
-            "Added 120+ unit and integration tests, lifting coverage from 72% to 90% across API, migration, validation, and persistence layers",
-            "Built horizontally scalable AWS services with autoscaling, health checks, retries, and observability, maintaining 99.9% availability",
-          ],
-        },
-      ],
-    },
-    {
-      company: "Esya Technologies",
-      location: "Toronto, ON",
-      logo: (
-        <img
-          alt="Esya Technologies"
-          src={esyaLogo}
-          className="w-full h-full object-cover"
-        />
-      ),
-      roles: [
-        {
-          title: "Software Engineer Intern",
-          dates: "Apr 2025 – Jul 2025",
-          bullets: [
-            "Built FastAPI services for PII detection/anonymization using YAML + regex for ETL pipelines",
-            "Deployed dev/staging on AWS (ECS, S3, KMS) with Docker + GitHub Actions CI/CD",
-            "Improved batch processing ~25% with Redis-backed background jobs and faster S3 I/O",
-            "Added JWT auth and CloudWatch audit logging for secure access and debugging",
-            "Orchestrated S3-triggered ETL workflows using AWS Lambda",
-            "Expanded pytest coverage with synthetic data; improved F1 ~92% → ~96%",
-            "Implemented k-anonymity checks and privacy risk reports; documented in Confluence/Jira",
-          ],
-        },
-      ],
-    },
-    {
-      company: "Computer Science Student Community",
-      location: "Mississauga, ON",
-      logo: (
-        <img alt="CSSC" src={cssclogo} className="w-full h-full object-cover" />
-      ),
-      roles: [
-        {
-          title: "Software Engineer",
-          dates: "Sept 2025 – Jan 2026",
-          bullets: [
-            "Built a RAG-based AI chatbot for the CSSC site, improving support for 3K+ monthly users",
-            "Developed a resources hub (React + Angular) with search, tagging, and GitHub/Drive sync",
-            "Set up Jenkins CI/CD with linting, tests, and automated deploys to improve release quality",
-          ],
-        },
-        {
-          title: "Director of Tech",
-          dates: "Jan 2026 – Apr 2026",
-          bullets: [
-            "Led the technical team, managing development workflows, code reviews, and feature rollouts",
-            "Maintained and improved infra, shipping updates while ensuring performance and reliability",
-            "Delivered hands-on workshops, mentored students on practical tools & real-life applications",
+            "Engineered 20+ features from 5.9M transactions across 7 banking channels for ~61K customers, including velocity, structuring signals, and KYC-derived ratios to surface AML risk patterns",
+            "Built and evaluated scalable ML detection models (Isolation Forest, XGBoost, Random Forest) under severe label scarcity and class imbalance, optimizing for AUPRC over accuracy",
+            "Applied SHAP to generate explainable AI outputs linking model risk scores to AML red flags from FINTRAC/FinCEN; collaborated in a 5-member agile team with hand-off-ready, reproducible pipelines",
+            "Automated data pipeline for transaction preprocessing, feature extraction, and model inference reducing manual effort by 40%",
+            "Documented model assumptions and limitations for business stakeholders; created Jira tickets for ongoing model monitoring and drift detection",
           ],
         },
       ],
@@ -119,8 +64,9 @@ const ExperienceSection = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-muted-foreground mb-16"
         >
-          2+ years of hands-on experience building systems and leading technical
-          initiatives.
+          2+ years of hands-on experience in machine learning, data engineering,
+          and robotics, with focus on building scalable systems and autonomous
+          solutions.
         </motion.p>
 
         <div className="grid grid-cols-1 gap-6">

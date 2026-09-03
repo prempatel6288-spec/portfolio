@@ -10,24 +10,28 @@ const EducationSection = () => {
 
   const educationData = [
     {
-      institution: "University of Toronto",
+      institution: "University of Toronto Mississauga",
       degree: "Honours Bachelor of Science (HBSc)",
-      field: "Computer Science, Stats and Applied Math",
-      dates: "2023 – 2027",
-      location: "Toronto, ON",
+      field: "Computer Science & Applied Statistics, Minor in Mathematics",
+      dates: "Sept 2023 – June 2027",
+      location: "Mississauga, ON",
       logo: uoftLogo,
+      additional: [
+        "Relevant Coursework: Machine Learning, Data Structures, Statistical Modelling, Software Design, Regression Analysis",
+        "UTM Co-op Internship Program (UTMCIP)"
+      ]
     },
     {
-      institution: "London School of Economics and Political Science",
-      degree: "Summer School",
+      institution: "UTM Robotics Club",
+      degree: "Software Developer",
       field: "",
-      courses: [
-        "ME314 – Introduction to Data Science and Machine Learning",
-        "FM360 – Options, Futures and Other Financial Derivatives",
-      ],
-      dates: "2025",
-      location: "London, UK",
+      dates: "Sept 2024 – Present",
+      location: "Mississauga, ON",
       logo: lseLogo,
+      courses: [
+        "Kobuki (TurtleBot): Configured ROS communication stack on Raspberry Pi for remote operation and working toward visual SLAM",
+        "Robot Arm: Designing 6-DOF robotic manipulator with 3D-printed parts, inverse kinematics, and OpenCV object detection"
+      ]
     },
   ];
 
@@ -77,6 +81,15 @@ const EducationSection = () => {
                     <p className="text-sm text-muted-foreground mt-0.5">
                       {edu.field}
                     </p>
+                  )}
+                  {edu.additional && (
+                    <div className="mt-3 space-y-1">
+                      {edu.additional.map((item, i) => (
+                        <p key={i} className="text-xs text-muted-foreground">
+                          {item}
+                        </p>
+                      ))}
+                    </div>
                   )}
                   <div className="flex items-center gap-2 mt-2 text-sm text-muted-foreground">
                     <span>{edu.location}</span>

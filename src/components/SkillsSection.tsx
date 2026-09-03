@@ -9,19 +9,19 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       title: "Languages",
-      skills: ["Python", "Java", "C", "C++", "C#", "JavaScript", "TypeScript", "R", "Bash", "HTML"]
+      skills: ["Python", "Java", "C", "C#", "JavaScript", "TypeScript", "SQL"]
     },
     {
-      title: "Frameworks",
-      skills: ["FastAPI", "React", "Flask", "Node.js", "scikit-learn", "PyTorch", "Spring Boot"]
+      title: "Robotics & AI",
+      skills: ["ROS", "OpenCV", "SLAM", "Scikit-learn", "XGBoost", "SHAP", "NumPy", "Pandas"]
     },
     {
-      title: "Cloud & Database",
-      skills: ["AWS", "Docker", "Kubernetes", "Redis", "PostgreSQL", "NoSQL", "Google Cloud"]
+      title: "Cloud & Tools",
+      skills: ["AWS", "Git", "CI/CD", "REST APIs", "Jupyter", "Jira", "Agile/Scrum", "Azure", "Linux"]
     },
     {
-      title: "Tools",
-      skills: ["Git", "GitHub Actions", "Linux", "Pytest", "JUnit", "Postman", "CI/CD"]
+      title: "Data & ML",
+      skills: ["Machine Learning", "Data Engineering", "Feature Engineering", "SQL Optimization", "Statistical Modelling"]
     }
   ];
 

@@ -56,15 +56,15 @@ const useTypingEffect = (
 
   return displayText;
 };
-const codeString = `const parth = {
-  name: "Parth Tyagi",
-  location: "Toronto",
-  yearsOfExperience: "3+",
-  projectsBuilt: "15+",
-  university: "University of Toronto",
-  major: ["Computer Science", "Applied Math"],
-  technologies: ["Python", "Java", "C", "AWS", "Docker", "TensorFlow", "PostgreSQL"],
-  skills: ["Backend Development", "Machine Learning", "Data Engineering", "Full Stack"]
+const codeString = `const prem = {
+  name: "Prem Patel",
+  location: "Brampton, ON",
+  yearsOfExperience: "1+",
+  projectsBuilt: "8+",
+  university: "University of Toronto Mississauga",
+  major: ["Computer Science", "Applied Statistics", "Minor: Mathematics"],
+  technologies: ["Python", "Java", "C", "AWS", "ROS", "OpenCV", "Scikit-learn"],
+  skills: ["Machine Learning", "Robotics", "Data Engineering", "Full Stack", "Cloud"]
 };`;
 
 const SyntaxHighlightedCode = () => {
@@ -80,38 +80,38 @@ const SyntaxHighlightedCode = () => {
   return (
     <code>
       <span className={keyword}>const</span>{" "}
-      <span className={variable}>parth</span>{" "}
+      <span className={variable}>prem</span>{" "}
       <span className={punctuation}>=</span>{" "}
       <span className={bracket}>{"{"}</span>
       {"\n"}
       {"  "}
       <span className={property}>name</span>
       <span className={punctuation}>:</span>{" "}
-      <span className={string}>"Parth Tyagi"</span>
+      <span className={string}>"Prem Patel"</span>
       <span className={punctuation}>,</span>
       {"\n"}
       {"  "}
       <span className={property}>location</span>
       <span className={punctuation}>:</span>{" "}
-      <span className={string}>"Toronto"</span>
+      <span className={string}>"Brampton, ON"</span>
       <span className={punctuation}>,</span>
       {"\n"}
       {"  "}
       <span className={property}>yearsOfExperience</span>
       <span className={punctuation}>:</span>{" "}
-      <span className={string}>"3+"</span>
+      <span className={string}>"1+"</span>
       <span className={punctuation}>,</span>
       {"\n"}
       {"  "}
       <span className={property}>projectsBuilt</span>
       <span className={punctuation}>:</span>{" "}
-      <span className={string}>"15+"</span>
+      <span className={string}>"8+"</span>
       <span className={punctuation}>,</span>
       {"\n"}
       {"  "}
       <span className={property}>university</span>
       <span className={punctuation}>:</span>{" "}
-      <span className={string}>"University of Toronto"</span>
+      <span className={string}>"University of Toronto Mississauga"</span>
       <span className={punctuation}>,</span>
       {"\n"}
       {"  "}
@@ -120,7 +120,7 @@ const SyntaxHighlightedCode = () => {
       <span className={arrayBracket}>[</span>
       <span className={string}>"Computer Science"</span>
       <span className={punctuation}>,</span>{" "}
-      <span className={string}>"Applied Math"</span>
+      <span className={string}>"Applied Statistics"</span>
       <span className={arrayBracket}>]</span>
       <span className={punctuation}>,</span>
       {"\n"}
@@ -135,11 +135,9 @@ const SyntaxHighlightedCode = () => {
       <span className={punctuation}>,</span>{" "}
       <span className={string}>"AWS"</span>
       <span className={punctuation}>,</span>{" "}
-      <span className={string}>"Docker"</span>
+      <span className={string}>"ROS"</span>
       <span className={punctuation}>,</span>{" "}
-      <span className={string}>"TensorFlow"</span>
-      <span className={punctuation}>,</span>{" "}
-      <span className={string}>"PostgreSQL"</span>
+      <span className={string}>"OpenCV"</span>
       <span className={arrayBracket}>]</span>
       <span className={punctuation}>,</span>
       {"\n"}
@@ -147,9 +145,9 @@ const SyntaxHighlightedCode = () => {
       <span className={property}>skills</span>
       <span className={punctuation}>:</span>{" "}
       <span className={arrayBracket}>[</span>
-      <span className={string}>"Backend Development"</span>
-      <span className={punctuation}>,</span>{" "}
       <span className={string}>"Machine Learning"</span>
+      <span className={punctuation}>,</span>{" "}
+      <span className={string}>"Robotics"</span>
       <span className={punctuation}>,</span>{" "}
       <span className={string}>"Data Engineering"</span>
       <span className={punctuation}>,</span>{" "}
@@ -165,7 +163,7 @@ const SyntaxHighlightedCode = () => {
 const HeroSection = () => {
   const [copied, setCopied] = useState(false);
   const typedText = useTypingEffect(
-    ["Parth Tyagi", "Developer", "Engineer"],
+    ["Prem Patel", "ML Engineer", "Roboticist"],
     100,
     60,
     1500,
@@ -202,10 +200,10 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            I'm a CS and Stats student at the University of Toronto. I've
-            completed 15+ projects and 2 internships spanning full-stack
-            development, machine learning, quantitative finance, and systems
-            programming, with a focus on AI/ML.
+            I'm a Computer Science & Applied Statistics student at the
+            University of Toronto Mississauga. I've built 8+ projects spanning
+            machine learning, robotics, cloud-native development, and agile
+            delivery, with hands-on experience in autonomous systems and AI.
           </motion.p>
 
           <motion.div
@@ -245,7 +243,7 @@ const HeroSection = () => {
                 <div className="w-3 h-3 rounded-full bg-[#28c840]" />
               </div>
               <span className="text-xs text-[#808080] font-mono ml-2">
-                parth.ts
+                prem.ts
               </span>
             </div>
             <button
