@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Redirect unknown paths to index.html while preserving route information.
+      var path = window.location.pathname + window.location.search + window.location.hash;
+      var cleaned = path.replace(/^\//, "").replace(/&/g, "~and~");
+      window.location.replace("/?/" + cleaned);
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
